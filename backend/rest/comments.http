@@ -1,0 +1,18 @@
+GET http://localhost:3000/comments HTTP/1.1
+
+###
+
+GET http://localhost:3000/comments?parentId=64ddc462b41568a5a2a9effc HTTP/1.1
+
+###
+
+
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+    "text": " fggd",
+    "userId": "64ddc462b41568a5a2a9effc"
+
+
+}
