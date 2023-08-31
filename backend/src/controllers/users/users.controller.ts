@@ -7,13 +7,13 @@ export class UsersController {
 
     constructor(private userService: UsersService) {}
 
-    @Post()
+    @Post('add')
     @UsePipes(new ValidationPipe())
     create(@Body() createUserDto: CreateUserDto) {
       return this.userService.create(createUserDto);
     }
 
-    @Get()
+    @Get('getall')
      getUsers() {
         return  this.userService.findUser();
     }
